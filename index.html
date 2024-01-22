@@ -32,10 +32,20 @@
 
     <section id="contact">
         <h2>Contacto</h2>
-        <form>
-            <!-- Formulario de contacto -->
+        <form action="/procesar_formulario" method="post">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required><br>
+    
+            <label for="email">Correo Electrónico:</label>
+            <input type="email" id="email" name="email" required><br>
+    
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" required></textarea><br>
+    
+            <input type="submit" value="Enviar">
         </form>
     </section>
+    
 
     <footer>
         <!-- Enlaces a redes sociales -->
