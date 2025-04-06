@@ -1,54 +1,133 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
-    <title>Tu Nombre - Página Personal</title>
-    <link rel="stylesheet" type="text/css" href="estilos.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Iván Gómez | Data Scientist</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Roboto', sans-serif;
+      background-color: #f5f5f5;
+      color: #333;
+    }
+    header {
+      background-color: #0a66c2;
+      color: white;
+      padding: 2rem;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+    header p {
+      margin: 0.5rem 0 0;
+      font-size: 1.2rem;
+    }
+    .section {
+      padding: 2rem;
+      max-width: 900px;
+      margin: auto;
+    }
+    .section h2 {
+      color: #0a66c2;
+      border-bottom: 2px solid #ddd;
+      padding-bottom: 0.5rem;
+    }
+    .contact a {
+      display: inline-block;
+      margin-right: 1rem;
+      text-decoration: none;
+      color: #0a66c2;
+      font-weight: bold;
+    }
+    .card {
+      background-color: white;
+      padding: 1rem;
+      margin: 1rem 0;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.05);
+    }
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background: #eee;
+      font-size: 0.9rem;
+    }
+  </style>
 </head>
 <body>
-    <header>
-        <h1>Tu Nombre</h1>
-        <img src="tu-foto.jpg" alt="Tu Foto">
-    </header>
 
-    <section id="about-me">
-        <h2>Sobre Mí</h2>
-        <p>Texto sobre ti...</p>
-    </section>
+  <header>
+    <h1>Iván Gómez</h1>
+    <p>PhD Student in Data Science & AI | Data Scientist especializado en Industria</p>
+  </header>
 
-    <section id="portfolio">
-        <h2>Portafolio</h2>
-        <!-- Agrega tus proyectos aquí -->
-    </section>
+  <div class="section">
+    <h2>Sobre mí</h2>
+    <p>
+      Soy Iván Gómez, Data Scientist especializado en Industria y estudiante de doctorado en Ciencia de Datos e Inteligencia Artificial en la Universidad de Zaragoza.
+      Mi carrera se ha caracterizado por un constante equilibrio entre el trabajo y los estudios, siempre con un enfoque en aprender y aplicar nuevos conocimientos,
+      desde la ingeniería electrónica y automática hasta la inteligencia artificial.
+    </p>
+  </div>
 
-    <section id="skills">
-        <h2>Habilidades</h2>
-        <!-- Lista de habilidades -->
-    </section>
+  <div class="section">
+    <h2>Experiencia Profesional</h2>
 
-    <section id="testimonials">
-        <h2>Testimonios</h2>
-        <!-- Testimonios aquí -->
-    </section>
+    <div class="card">
+      <h3>Data Scientist Especializado en Industria - ENTRERRIOS AUTOMATIZACION S.A</h3>
+      <p><strong>Jul. 2022 - Actualidad | Teruel, España</strong></p>
+      <ul>
+        <li>Desarrollo de pipelines de datos industriales desde sensores, PLCs y SCADAs.</li>
+        <li>Modelos de ML y DL para predicción y optimización.</li>
+        <li>Visión artificial para inspección y control de calidad.</li>
+        <li>Dashboards con Power BI y gestión de bases de datos SQL/NoSQL.</li>
+      </ul>
+    </div>
 
-    <section id="contact">
-        <h2>Contacto</h2>
-        <form action="/procesar_formulario" method="post">
-            <label for="nombre">Nombre:</label>
-            <input type="text" id="nombre" name="nombre" required><br>
-    
-            <label for="email">Correo Electrónico:</label>
-            <input type="email" id="email" name="email" required><br>
-    
-            <label for="mensaje">Mensaje:</label>
-            <textarea id="mensaje" name="mensaje" required></textarea><br>
-    
-            <input type="submit" value="Enviar">
-        </form>
-    </section>
-    
+    <div class="card">
+      <h3>Asesor académico - COGITIAR</h3>
+      <p><strong>May. 2021 - Nov. 2021 (Remoto)</strong></p>
+    </div>
+  </div>
 
-    <footer>
-        <!-- Enlaces a redes sociales -->
-    </footer>
+  <div class="section">
+    <h2>Educación</h2>
+    <div class="card">
+      <h3>PhD en Data Science & AI - Universidad de Zaragoza</h3>
+      <p>2023 - 2028</p>
+      <p>Proyecto: <strong>TrafficDator</strong>, IA para predicción de tráfico urbano.</p>
+    </div>
+    <div class="card">
+      <h3>Máster en Visual Analytics & Big Data - UNIR</h3>
+      <p>2022 - 2024</p>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2>Premios y Reconocimientos</h2>
+    <ul>
+      <li>🏆 Mejor Expediente Ingeniería Electrónica y Automática (2022)</li>
+      <li>🏅 Premio al Mejor Trabajo Fin de Grado (COGITIAR)</li>
+      <li>📄 Publicaciones científicas en IA aplicada al tráfico urbano</li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <h2>Contacto</h2>
+    <div class="contact">
+      <a href="mailto:ivangomez@email.com">Email</a>
+      <a href="https://www.linkedin.com/in/iván-gómez-656940235/" target="_blank">LinkedIn</a>
+      <!-- Agrega GitHub, Portfolio, etc. si quieres -->
+    </div>
+  </div>
+
+  <footer>
+    &copy; 2025 Iván Gómez | Desarrollado con 💻 por mí mismo
+  </footer>
+
 </body>
 </html>
