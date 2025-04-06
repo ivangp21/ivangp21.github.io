@@ -1,132 +1,217 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Iván Gómez | Data Scientist</title>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Iván Gómez | Data Scientist & PhD</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap" rel="stylesheet" />
+  <!-- Añadido Font Awesome para los iconos -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
   <style>
-    body {
+    * {
+      box-sizing: border-box;
       margin: 0;
+      padding: 0;
+    }
+    body {
       font-family: 'Roboto', sans-serif;
       background-color: #f5f5f5;
       color: #333;
+      line-height: 1.6;
+    }
+    .profile-pic {
+      width: 160px;
+      height: 200px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 1rem;
     }
     header {
-      background-color: #0a66c2;
-      color: white;
-      padding: 2rem;
+      position: relative;
       text-align: center;
     }
+    header img.bg {
+      width: 100%;
+      height: 350px;
+      object-fit: cover;
+      filter: brightness(1);
+      opacity: 0.15; 
+    }
+    header .overlay {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: #0a66c2;
+    }
     header h1 {
-      margin: 0;
       font-size: 2.5rem;
+      margin-bottom: 0.5rem;
     }
     header p {
-      margin: 0.5rem 0 0;
-      font-size: 1.2rem;
+      font-size: 1.1rem;
     }
     .section {
-      padding: 2rem;
       max-width: 900px;
       margin: auto;
+      padding: 2rem 1rem;
     }
     .section h2 {
       color: #0a66c2;
-      border-bottom: 2px solid #ddd;
-      padding-bottom: 0.5rem;
-    }
-    .contact a {
-      display: inline-block;
-      margin-right: 1rem;
-      text-decoration: none;
-      color: #0a66c2;
-      font-weight: bold;
+      margin-bottom: 1rem;
+      border-bottom: 2px solid #eee;
+      padding-bottom: 0.3rem;
     }
     .card {
-      background-color: white;
+      background: white;
       padding: 1rem;
-      margin: 1rem 0;
       border-radius: 8px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.05);
+      margin-bottom: 1rem;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    }
+    ul {
+      padding-left: 1.5rem;
+    }
+    a {
+      color: #0a66c2;
+      text-decoration: none;
     }
     footer {
-      text-align: center;
-      padding: 1rem;
       background: #eee;
+      padding: 1rem;
+      text-align: center;
       font-size: 0.9rem;
+    }
+    /* Estilos para los iconos de contacto en el encabezado */
+    .contact-icons {
+      margin-top: 10px;
+    }
+    .contact-icons a {
+      color: #0a66c2;
+      font-size: 1.5rem;
+      margin: 0 10px;
+      transition: color 0.3s;
+    }
+    .contact-icons a:hover {
+      color: #084b8e;
     }
   </style>
 </head>
 <body>
 
   <header>
-    <h1>Iván Gómez</h1>
-    <p>PhD Student in Data Science & AI | Data Scientist especializado en Industria</p>
+    <img src="FONDO.png" alt="Fondo" class="bg" />
+    <div class="overlay">
+      <img src="FOTO_PERSONAL.png" alt="Iván Gómez" class="profile-pic" />
+      <h1>Iván Gómez</h1>
+      <p>PhD Student in Data Science & AI · Data Scientist Industrial</p>
+      <!-- Añadidos iconos de contacto debajo del nombre -->
+      <div class="contact-icons">
+        <a href="mailto:ivangomez@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
+        <a href="https://www.linkedin.com/in/iván-gómez-656940235/" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+      </div>
+    </div>
   </header>
 
   <div class="section">
     <h2>Sobre mí</h2>
-    <p>
-      Soy Iván Gómez, Data Scientist especializado en Industria y estudiante de doctorado en Ciencia de Datos e Inteligencia Artificial en la Universidad de Zaragoza.
-      Mi carrera se ha caracterizado por un constante equilibrio entre el trabajo y los estudios, siempre con un enfoque en aprender y aplicar nuevos conocimientos,
-      desde la ingeniería electrónica y automática hasta la inteligencia artificial.
+    <p style="text-align: justify;">
+      Soy Iván Gómez, Data Scientist especializado en Industria y estudiante de doctorado en Ciencia de Datos e IA en la Universidad de Zaragoza.
+    </p>
+  
+    <p style="text-align: justify;">
+        Mi carrera se ha caracterizado por un constante equilibrio entre el trabajo y los estudios, siempre con un enfoque en aprender y aplicar nuevos conocimientos, desde la ingeniería electrónica y automática hasta la inteligencia artificial, pasando por múltiples tecnologías y disciplinas, buscando siempre nuevos retos.
+        Trabajo en el desarrollo de soluciones basadas en IA para entornos industriales, integrando sensores, PLCs y SCADAs con modelos avanzados de Machine Learning y Deep Learning.
     </p>
   </div>
 
-  <div class="section">
-    <h2>Experiencia Profesional</h2>
 
+  <div class="section">
+    <h2>Experiencia profesional</h2>
     <div class="card">
-      <h3>Data Scientist Especializado en Industria - ENTRERRIOS AUTOMATIZACION S.A</h3>
-      <p><strong>Jul. 2022 - Actualidad | Teruel, España</strong></p>
+      <h3>Data Scientist - Entrerríos Automatización S.A.</h3>
+      <p><strong>Jul. 2022 - Actualidad</strong></p>
       <ul>
-        <li>Desarrollo de pipelines de datos industriales desde sensores, PLCs y SCADAs.</li>
-        <li>Modelos de ML y DL para predicción y optimización.</li>
-        <li>Visión artificial para inspección y control de calidad.</li>
-        <li>Dashboards con Power BI y gestión de bases de datos SQL/NoSQL.</li>
+        <li>Desarrollo de pipelines automatizados para la adquisición y procesamiento de datos industriales desde sensores, PLCs, SCADAs y APIs.</li>
+        <li>Implementación de modelos de Machine Learning y Deep Learning para la optimización y predicción industrial.</li>
+        <li>Aplicación de Visión Artificial en inspección visual y control de calidad.</li>
+        <li>Diseño y administración de bases de datos SQL y NoSQL.</li>
+        <li>Creación de dashboards interactivos en Power BI para el monitoreo y análisis.</li>
+        <li>Integración de Inteligencia Artificial en sistemas industriales (PLCs, SCADAs y HMIs).</li>
       </ul>
     </div>
-
     <div class="card">
       <h3>Asesor académico - COGITIAR</h3>
-      <p><strong>May. 2021 - Nov. 2021 (Remoto)</strong></p>
+      <p><strong>May. 2021 - Nov. 2021 </strong></p>
     </div>
   </div>
 
   <div class="section">
     <h2>Educación</h2>
     <div class="card">
-      <h3>PhD en Data Science & AI - Universidad de Zaragoza</h3>
-      <p>2023 - 2028</p>
-      <p>Proyecto: <strong>TrafficDator</strong>, IA para predicción de tráfico urbano.</p>
-    </div>
+        <h3>PhD en Data Science & AI - Universidad de Zaragoza</h3>
+        <p><strong>Ago. 2023 - Ago. 2028</strong></p>
+        <p>
+          In the <a href="https://webdiis.unizar.es/~silarri/NEAT-AMBIENCE/" target="_blank" rel="noopener noreferrer">NEAT-AMBIENCE project</a>, we focus on developing innovative data management techniques to improve citizens' daily lives. Specifically, with 
+          <a href="https://webdiis.unizar.es/~silarri/prot/TrafficDator/" target="_blank" rel="noopener noreferrer">TrafficDator</a>, our goal is to develop Artificial Intelligence-based methodologies for short- and long-term traffic prediction. To achieve this, we integrate a variety of data sources and apply advanced Machine Learning and Deep Learning models, optimizing accuracy and efficiency in estimating traffic flow.
+        </p>
+        <p>This project is conducted under the auspices of the University of Zaragoza and the Doctoral Program in Systems and Informatics Engineering.</p>
+      </div>
+      
     <div class="card">
       <h3>Máster en Visual Analytics & Big Data - UNIR</h3>
-      <p>2022 - 2024</p>
+      <p><strong>Ago. 2022 - Jun. 2024</strong></p>
+      <p>Máster especializado en análisis visual, big data e inteligencia artificial. El programa incluye asignaturas como aprendizaje automático, minería de datos y análisis predictivo. Formado en la extracción de información de grandes conjuntos de datos y en la creación de visualizaciones avanzadas para apoyar la toma de decisiones basada en datos.</p>
     </div>
   </div>
 
   <div class="section">
     <h2>Premios y Reconocimientos</h2>
     <ul>
-      <li>🏆 Mejor Expediente Ingeniería Electrónica y Automática (2022)</li>
-      <li>🏅 Premio al Mejor Trabajo Fin de Grado (COGITIAR)</li>
-      <li>📄 Publicaciones científicas en IA aplicada al tráfico urbano</li>
+      <li>
+        🏆 
+        <a href="https://www.diariodeteruel.es/teruel/la-escuela-politecnica-de-teruel-celebra-su-patron-con-la-vista-puesta-en-mantener-el-crecimiento" target="_blank" rel="noopener noreferrer">
+          Mejor Expediente Ingeniería Electrónica y Automática (2022)
+        </a>
+      </li>
+      <li>
+        🏅 
+        <a href="https://www.instagram.com/p/Cty9gveMrOE/?img_index=1" target="_blank" rel="noopener noreferrer">
+          Premio al Mejor Trabajo Fin de Grado (COGITIAR)
+        </a> — 
+        <a href="https://www.diariodeteruel.es/teruel/un-alumno-de-ingenieria-electronica-disena-un-nuevo-sistema-para-poder-estimar-el-riesgo-de-caidas-en-mayores" target="_blank" rel="noopener noreferrer">
+          Proyecto sobre predicción con IA del riesgo de caídas en mayores
+        </a>
+      </li>
     </ul>
+  </div>
+  
+
+  <div class="section">
+    <h2>Publicaciones científicas</h2>
+    <div class="card">
+      <p><strong>📄 Enriched traffic datasets for the city of Madrid</strong></p>
+      <p><em>Data in Brief · 31 ago. 2024</em></p>
+    </div>
+    <div class="card">
+      <p><strong>🧠 Innovaciones en la Gestión del Tráfico Urbano Utilizando Fuentes de Datos Heterogéneas e IA</strong></p>
+      <p><em>Jornada de Jóvenes Investigadores del I3A · 17 jul. 2024</em></p>
+    </div>
   </div>
 
   <div class="section">
-    <h2>Contacto</h2>
-    <div class="contact">
-      <a href="mailto:ivangomez@email.com">Email</a>
-      <a href="https://www.linkedin.com/in/iván-gómez-656940235/" target="_blank">LinkedIn</a>
-      <!-- Agrega GitHub, Portfolio, etc. si quieres -->
+    <h2>Idiomas</h2>
+    <div class="card">
+    <p><strong>Español</strong> - Nativo</p>
+      </div>
+    <div class="card">
+      <p><strong>FIRST Certificate in English</strong></p>
+      <p>University of Cambridge · Nov. 2022</p>
     </div>
   </div>
 
   <footer>
-    &copy; 2025 Iván Gómez | Desarrollado con 💻 por mí mismo
+    &copy; 2025 Iván Gómez · Desarrollando con 💡 y mucho café ☕
   </footer>
 
 </body>
