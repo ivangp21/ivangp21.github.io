@@ -31,12 +31,13 @@ header {
   position: relative;
   text-align: center;
   color: #0a66c2;
-  padding: 4rem 1rem; /* Use padding instead of fixed height */
+  padding: 4rem 1rem;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   min-height: 400px;
+  overflow: hidden; /* Prevents background from overflowing */
 }
 
 header .bg {
@@ -51,9 +52,9 @@ header .bg {
 }
 
 .profile-pic {
-  width: 160px; /* Set a base width */
-  height: auto;   /* Let the height adjust automatically to keep the aspect ratio */
-  border-radius: 12px; /* Soft rounded corners instead of a circle */
+  width: 160px;
+  height: auto;
+  border-radius: 12px;
   object-fit: cover;
   margin-bottom: 1.5rem;
 }
@@ -61,11 +62,13 @@ header .bg {
 header h1 {
   font-size: 2.5rem;
   margin-bottom: 0.5rem;
+  line-height: 1.2;
 }
 
 header p {
   font-size: 1.1rem;
   max-width: 600px;
+  margin: 0 auto;
 }
 
 .contact-icons {
@@ -167,20 +170,28 @@ footer {
 @media (max-width: 768px) {
   /* Adjust header for tablets and mobiles */
   header {
-    padding: 2rem 1rem;
+    padding: 2.5rem 1rem;
     min-height: auto;
   }
 
   .profile-pic {
-    width: 120px; /* Make the picture smaller on mobile */
+    width: 120px;
   }
 
   header h1 {
-    font-size: 2rem;
+    font-size: 1.8rem; /* Reduced font size */
   }
 
   header p {
-    font-size: 1rem;
+    font-size: 0.9rem; /* Reduced font size */
+  }
+
+  .contact-icons {
+    margin-top: 0.8rem;
+  }
+
+  .contact-icons a {
+    font-size: 1.3rem; /* Slightly smaller icons */
   }
 
   /* Navbar hamburger menu */
