@@ -26,12 +26,17 @@
   </header>
 
   <nav class="navbar">
-    <a href="#profile">Profile</a>
-    <a href="#skills">Skills</a>
-    <a href="#experience">Experience</a>
-    <a href="#education">Education</a>
-    <a href="#awards">Awards</a>
-    <a href="#publications">Publications</a>
+    <button class="hamburger" id="hamburger-button">
+        <i class="fas fa-bars"></i>
+    </button>
+    <div class="navbar-links" id="navbar-links">
+        <a href="#profile">Profile</a>
+        <a href="#skills">Skills</a>
+        <a href="#experience">Experience</a>
+        <a href="#education">Education</a>
+        <a href="#awards">Awards</a>
+        <a href="#publications">Publications</a>
+    </div>
   </nav>
 
   <div id="profile" class="section">
@@ -182,6 +187,15 @@
   <footer>
     &copy; 2025 Iván Gómez Pascual · Developing with 💡 and lots of coffee ☕
   </footer>
+
+  <script>
+    const hamburgerButton = document.getElementById('hamburger-button');
+    const navbarLinks = document.getElementById('navbar-links');
+
+    hamburgerButton.addEventListener('click', () => {
+        navbarLinks.classList.toggle('active');
+    });
+  </script>
 
 </body>
 </html>
