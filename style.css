@@ -197,8 +197,13 @@ footer {
   /* Adjust navbar for mobile to show links in a row */
   .navbar {
     padding: 0.5rem;
-    /* Allow links to wrap if they don't fit */
+    justify-content: center;
+  }
+
+  .navbar-links {
+    display: flex;
     flex-wrap: wrap;
+    justify-content: center;
   }
 
   .navbar-links a {
