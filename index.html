@@ -15,9 +15,10 @@
   <header>
     <img src="FONDO.png" alt="" class="bg" />
     <div class="overlay">
-      <img src="FOTO_PERSONAL.png" alt="Iván Gómez Pascual" class="profile-pic" />
-      <h1>IVÁN GÓMEZ PASCUAL</h1>
-      <p>DATA SCIENTIST | PhD CANDIDATE IN DATA SCIENCE AND ARTIFICIAL INTELLIGENCE</p>
+      <!-- <img src="FOTO_PERSONAL.png" alt="Iván Gómez Pascual" class="profile-pic" /> -->
+      <img src="LOGOS/logo_horizontal.png" alt="Iván Gómez Pascual logo" class="profile-logo" />
+      <!-- <h1>IVÁN GÓMEZ PASCUAL</h1> -->
+      <!-- <p>DATA SCIENTIST | PhD CANDIDATE IN DATA SCIENCE AND ARTIFICIAL INTELLIGENCE</p> -->
       <div class="contact-icons">
         <a href="mailto:ivangp21@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
         <a href="https://www.linkedin.com/in/iván-gómez-656940235/" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
@@ -211,3 +212,29 @@
 
 </body>
 </html>
+
+<style>
+header .overlay {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.2rem; /* controla lo pegado que va logo/iconos */
+}
+
+@media (max-width: 768px) {
+  header {
+    padding: 1.25rem 1rem; /* antes 2.5rem */
+    min-height: auto;
+  }
+
+  .profile-logo {
+    width: 520px;
+    max-width: 90vw;
+    margin-bottom: 0; /* antes 0.6rem */
+  }
+
+  .contact-icons {
+    margin-top: 0; /* antes 0.6rem */
+  }
+}
+</style>

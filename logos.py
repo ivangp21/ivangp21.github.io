@@ -10,7 +10,7 @@ from pathlib import Path
 OUT_DIR = Path("LOGOS")  # output folder (created next to where you run the script)
 INITIALS = "IGP"
 NAME = "IVÁN GÓMEZ PASCUAL"
-ROLE = "DATA SCIENTIST"
+ROLE = "DATA SCIENTIST | PhD CANDIDATE"
 
 # Palette inspired by a blue/steel UI
 NAVY = (10, 32, 56, 255)      # deep navy
@@ -135,7 +135,7 @@ def make_horizontal_logo(
     width: int = 1400,
     height: int = 420,
     name: str = "IVÁN GÓMEZ PASCUAL",
-    role: str = "DATA SCIENTIST",
+    role: str = "DATA SCIENTIST |PhD CANDIDATE",
 ) -> Image.Image:
     img = Image.new("RGBA", (width, height), (0, 0, 0, 0))
     d = ImageDraw.Draw(img)
