@@ -1,19 +1,19 @@
-# generar_logo.py
+# generate_logo.py
 from PIL import Image, ImageDraw, ImageFont
 import math
 import os
 from pathlib import Path
 
 # ======================
-# Configuración rápida
+# Quick configuration
 # ======================
-OUT_DIR = Path("output")   # carpeta de salida (se crea sola)
+OUT_DIR = Path("LOGOS")  # output folder (created next to where you run the script)
 INITIALS = "IGP"
 NAME = "IVÁN GÓMEZ PASCUAL"
 ROLE = "DATA SCIENTIST"
-SUBTITLE = "Data · AI"     # pon "" si no quieres la línea de abajo
+SUBTITLE = "Data · AI"   # set "" to remove the subtitle line
 
-# Palette inspired by the site background (blue/steel)
+# Palette inspired by a blue/steel UI
 NAVY = (10, 32, 56, 255)      # deep navy
 CYAN = (30, 144, 255, 255)    # dodger-ish blue
 STEEL = (120, 140, 160, 255)  # steel gray
@@ -21,19 +21,20 @@ CYAN_SOFT = (30, 144, 255, 120)
 STEEL_SOFT = (120, 140, 160, 110)
 NAVY_SOFT = (10, 32, 56, 120)
 
+
 def load_font(size: int, bold: bool = False) -> ImageFont.FreeTypeFont:
     """
-    Carga una fuente "decente" con fallbacks multiplataforma.
-    Si no encuentra ninguna, usa la fuente por defecto de PIL.
+    Loads a decent font with cross-platform fallbacks.
+    If none are found, falls back to PIL's default bitmap font.
     """
     candidates = [
         # Linux
         "/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf" if bold else "/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf",
         "/usr/share/fonts/truetype/liberation/LiberationSans-Bold.ttf" if bold else "/usr/share/fonts/truetype/liberation/LiberationSans-Regular.ttf",
-        # macOS (algunas opciones típicas)
+        # macOS (common options)
         "/System/Library/Fonts/Supplemental/Arial Bold.ttf" if bold else "/System/Library/Fonts/Supplemental/Arial.ttf",
         "/System/Library/Fonts/Helvetica.ttc",
-        # Windows (rutas típicas)
+        # Windows (typical paths)
         r"C:\Windows\Fonts\arialbd.ttf" if bold else r"C:\Windows\Fonts\arial.ttf",
         r"C:\Windows\Fonts\segoeuib.ttf" if bold else r"C:\Windows\Fonts\segoeui.ttf",
     ]
@@ -45,10 +46,10 @@ def load_font(size: int, bold: bool = False) -> ImageFont.FreeTypeFont:
             except Exception:
                 pass
 
-    # Fallback final
     return ImageFont.load_default()
 
-def make_square_logo(size=1024, initials="IGP", subtitle: str = "data · ai"):
+
+def make_square_logo(size: int = 1024, initials: str = "IGP", subtitle: str = "data · ai") -> Image.Image:
     img = Image.new("RGBA", (size, size), (0, 0, 0, 0))
     d = ImageDraw.Draw(img)
 
@@ -67,7 +68,7 @@ def make_square_logo(size=1024, initials="IGP", subtitle: str = "data · ai"):
         d.ellipse(bbox, outline=col, width=w)
 
     # HUD-like arc segments
-    def arc(r, start, end, col, w):
+    def arc(r: int, start: int, end: int, col, w: int):
         bbox = [cx - r, cy - r, cx + r, cy + r]
         d.arc(bbox, start=start, end=end, fill=col, width=w)
 
@@ -132,7 +133,14 @@ def make_square_logo(size=1024, initials="IGP", subtitle: str = "data · ai"):
 
     return img
 
-def make_horizontal_logo(width=1400, height=420, name="IVÁN GÓMEZ PASCUAL", role="DATA SCIENTIST", subtitle="data · ai"):
+
+def make_horizontal_logo(
+    width: int = 1400,
+    height: int = 420,
+    name: str = "IVÁN GÓMEZ PASCUAL",
+    role: str = "DATA SCIENTIST",
+    subtitle: str = "data · ai",
+) -> Image.Image:
     img = Image.new("RGBA", (width, height), (0, 0, 0, 0))
     d = ImageDraw.Draw(img)
 
@@ -152,7 +160,7 @@ def make_horizontal_logo(width=1400, height=420, name="IVÁN GÓMEZ PASCUAL", ro
     nw, nh = nb[2] - nb[0], nb[3] - nb[1]
     d.text((x0, y_center - nh), name, font=font_name, fill=NAVY)
 
-    # Accent underline (thin)
+    # Accent underline
     line_y = y_center + int(height * 0.02)
     d.line((x0, line_y, x0 + int(nw * 0.55), line_y), fill=CYAN, width=int(height * 0.02))
 
@@ -161,7 +169,9 @@ def make_horizontal_logo(width=1400, height=420, name="IVÁN GÓMEZ PASCUAL", ro
 
     return img
 
+
 def main():
+    # Create output folder next to where you execute the script
     OUT_DIR.mkdir(parents=True, exist_ok=True)
 
     # Generate assets
@@ -189,13 +199,13 @@ def main():
     favicon_256_path = OUT_DIR / "favicon_256.png"
     favicon_256.save(favicon_256_path)
 
-    print("✅ Generado en:", OUT_DIR.resolve())
+    print("✅ Generated in:", OUT_DIR.resolve())
     print(" -", square_path.name)
     print(" -", square_white_path.name)
     print(" -", horiz_path.name)
     print(" -", favicon_512_path.name)
     print(" -", favicon_256_path.name)
 
+
 if __name__ == "__main__":
     main()
-
