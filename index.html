@@ -222,9 +222,9 @@ header .overlay {
 }
 
 .profile-logo{
-  width: 520px;     /* antes te quedaba enorme */
-  max-width: 85vw;  /* para que sea responsive */
-  height: auto;
+  width: clamp(320px, 85vw, 460px);
+  max-width: 90vw;
+  margin-bottom: 0;
 }
 
 @media (max-width: 768px) {
