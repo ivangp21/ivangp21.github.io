@@ -11,7 +11,6 @@ OUT_DIR = Path("LOGOS")  # output folder (created next to where you run the scri
 INITIALS = "IGP"
 NAME = "IVÁN GÓMEZ PASCUAL"
 ROLE = "DATA SCIENTIST"
-SUBTITLE = "Data · AI"   # set "" to remove the subtitle line
 
 # Palette inspired by a blue/steel UI
 NAVY = (10, 32, 56, 255)      # deep navy
@@ -49,7 +48,7 @@ def load_font(size: int, bold: bool = False) -> ImageFont.FreeTypeFont:
     return ImageFont.load_default()
 
 
-def make_square_logo(size: int = 1024, initials: str = "IGP", subtitle: str = "data · ai") -> Image.Image:
+def make_square_logo(size: int = 1024, initials: str = "IGP") -> Image.Image:
     img = Image.new("RGBA", (size, size), (0, 0, 0, 0))
     d = ImageDraw.Draw(img)
 
@@ -119,17 +118,15 @@ def make_square_logo(size: int = 1024, initials: str = "IGP", subtitle: str = "d
     tw, th = (tb[2] - tb[0]), (tb[3] - tb[1])
 
     y_shift = int(size * 0.01)
-    if subtitle:
-        d.text((cx - tw / 2, cy - th / 2 - y_shift), initials, font=font, fill=NAVY)
-    else:
-        d.text((cx - tw / 2, cy - th / 2), initials, font=font, fill=NAVY)
+    # textbbox can have non-zero (even negative) left/top offsets depending on font metrics.
+    # Compensate those offsets so the rendered glyphs are truly centered.
+    d.text(
+        (cx - (tw / 2) - tb[0], cy - (th / 2) - tb[1] + y_shift),
+        initials,
+        font=font,
+        fill=NAVY,
+    )
 
-    # Subtitle (optional)
-    if subtitle:
-        font2 = load_font(int(size * 0.04), bold=False)
-        tb2 = d.textbbox((0, 0), subtitle, font=font2)
-        sw, sh = (tb2[2] - tb2[0]), (tb2[3] - tb2[1])
-        d.text((cx - sw / 2, cy + th / 2 - y_shift), subtitle, font=font2, fill=(10, 32, 56, 170))
 
     return img
 
@@ -139,14 +136,13 @@ def make_horizontal_logo(
     height: int = 420,
     name: str = "IVÁN GÓMEZ PASCUAL",
     role: str = "DATA SCIENTIST",
-    subtitle: str = "data · ai",
 ) -> Image.Image:
     img = Image.new("RGBA", (width, height), (0, 0, 0, 0))
     d = ImageDraw.Draw(img)
 
     # Left: square mark
     mark_size = int(height * 0.90)
-    mark = make_square_logo(size=mark_size, initials=INITIALS, subtitle=subtitle)
+    mark = make_square_logo(size=mark_size, initials=INITIALS)
     img.paste(mark, (int(height * 0.05), int((height - mark_size) / 2)), mark)
 
     # Right: wordmark
@@ -175,7 +171,7 @@ def main():
     OUT_DIR.mkdir(parents=True, exist_ok=True)
 
     # Generate assets
-    square = make_square_logo(1024, INITIALS, subtitle=SUBTITLE)
+    square = make_square_logo(1024, INITIALS)
     square_path = OUT_DIR / "logo_square.png"
     square.save(square_path)
 
@@ -186,7 +182,7 @@ def main():
     square_white.convert("RGB").save(square_white_path)
 
     # Horizontal
-    horiz = make_horizontal_logo(name=NAME, role=ROLE, subtitle=SUBTITLE)
+    horiz = make_horizontal_logo(name=NAME, role=ROLE)
     horiz_path = OUT_DIR / "logo_horizontal.png"
     horiz.save(horiz_path)
 
