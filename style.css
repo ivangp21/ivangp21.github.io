@@ -83,14 +83,41 @@ header p {
 }
 
 .contact-icons a {
+  color: #0a66c2 !important;               /* CHANGED: fuerza azul */
   font-size: 1.5rem;
   margin: 0 18px;
   transition: color 0.3s;
+  display: inline-flex;          /* NEW */
+  align-items: center;           /* NEW */
+  justify-content: center;       /* NEW */
+  line-height: 1;                /* NEW */
+}
+
+.contact-icons a:visited {
+  color: #0a66c2 !important;               /* CHANGED */
+}
+
+/* CHANGED: fuerza el color en el render real de FA (font y/o svg) */
+.contact-icons a i,
+.contact-icons a i::before,
+.contact-icons a svg,
+.contact-icons a svg path {
+  color: #0a66c2 !important;
+  fill: #0a66c2 !important;
 }
 
 .contact-icons a:hover {
-  color: #084b8e;
+  color: #084b8e !important; /* CHANGED: fuerza hover */
   text-decoration: none;
+}
+
+/* NEW: asegura hover también en el icono */
+.contact-icons a:hover i,
+.contact-icons a:hover i::before,
+.contact-icons a:hover svg,
+.contact-icons a:hover svg path {
+  color: #084b8e !important;
+  fill: #084b8e !important;
 }
 
 /* --- NAVBAR --- */
@@ -204,8 +231,13 @@ footer {
   }
 
   .contact-icons a {
+    color: #0a66c2;             /* NEW: asegura azul también en móvil */
     font-size: 1.3rem;
     margin: 0 16px;
+    display: inline-flex;        /* NEW */
+    align-items: center;         /* NEW */
+    justify-content: center;     /* NEW */
+    line-height: 1;              /* NEW */
   }
 
   /* Adjust navbar for mobile to show links in a row */

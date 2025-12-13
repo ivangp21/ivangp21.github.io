@@ -7,7 +7,7 @@
   <title>Iván Gómez Pascual | Data Scientist & PhD Candidate</title>
   <link rel="icon" type="image/png" href="LOGOS/logo_square_white.png" />
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
@@ -21,7 +21,10 @@
       <!-- <p>DATA SCIENTIST | PhD CANDIDATE IN DATA SCIENCE AND ARTIFICIAL INTELLIGENCE</p> -->
       <div class="contact-icons">
         <a href="mailto:ivangp21@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
-        <a href="https://www.linkedin.com/in/iván-gómez-656940235/" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+        <a href="https://www.linkedin.com/in/iván-gómez-656940235/" target="_blank" rel="noopener noreferrer" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+        <a href="https://x.com/ivangomezz21" target="_blank" rel="noopener noreferrer" title="X" aria-label="X">
+          <i class="fab fa-x-twitter" aria-hidden="true"></i>
+        </a>
       </div>
     </div>
   </header>
@@ -238,5 +241,20 @@ header .overlay {
   .contact-icons {
     margin-top: 0; /* antes 0.6rem */
   }
+}
+
+.contact-icons a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  margin: 0 0.5rem;
+  color: #fff;
+  transition: color 0.3s;
+}
+
+.contact-icons a:hover {
+  color: #f0db4f;
 }
 </style>
