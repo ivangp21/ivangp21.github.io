@@ -182,6 +182,11 @@ header p {
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
+.card h3 i {
+  margin-right: 8px;
+  color: #0a66c2;
+}
+
 ul {
   padding-left: 1.5rem;
 }
