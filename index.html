@@ -4,279 +4,313 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description"
-    content="Personal website and portfolio of Iván Gómez Pascual, a Data Scientist and PhD candidate specializing in Artificial Intelligence and industrial processes." />
-  <title>Iván Gómez Pascual | Data Scientist & PhD Candidate</title>
+  <meta
+    name="description"
+    content="Personal website of Iván Gómez Pascual, Applied AI Scientist and PhD Candidate focused on industrial AI, computer vision and automation integration."
+  />
+  <title>Iván Gómez Pascual | Applied AI Scientist</title>
   <link rel="icon" type="image/png" href="LOGOS/logo_square_white.png" />
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
   <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
-
   <header>
     <img src="FONDO.png" alt="" class="bg" />
     <div class="overlay">
-      <!-- <img src="FOTO_PERSONAL.png" alt="Iván Gómez Pascual" class="profile-pic" /> -->
-      <img src="LOGOS/logo_horizontal.png" alt="Iván Gómez Pascual logo" class="profile-logo" />
-      <!-- <h1>IVÁN GÓMEZ PASCUAL</h1> -->
-      <!-- <p>DATA SCIENTIST | PhD CANDIDATE IN DATA SCIENCE AND ARTIFICIAL INTELLIGENCE</p> -->
+      <div class="hero-main">
+        <img src="LOGOS/logo_square.png" alt="Iván Gómez Pascual logo" class="profile-logo-square" />
+        <div class="hero-copy">
+          <h1>IVÁN GÓMEZ PASCUAL</h1>
+          <p data-en="Applied AI Scientist | PhD Candidate in Data Science &amp; Artificial Intelligence" data-es="Científico de IA Aplicada | Doctorando en Ciencia de Datos e Inteligencia Artificial">Applied AI Scientist | PhD Candidate in Data Science &amp; Artificial Intelligence</p>
+        </div>
+      </div>
+
       <div class="contact-icons">
         <a href="mailto:ivangp21@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
-        <a href="https://www.linkedin.com/in/iván-gómez-656940235/" target="_blank" rel="noopener noreferrer"
-          title="LinkedIn"><i class="fab fa-linkedin"></i></a>
-        <a href="https://x.com/ivangomezz21" target="_blank" rel="noopener noreferrer" title="X" aria-label="X">
-          <i class="fab fa-x-twitter" aria-hidden="true"></i>
-        </a>
+        <a href="https://www.linkedin.com/in/iv%C3%A1n-g%C3%B3mez-656940235/" target="_blank" rel="noopener noreferrer" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+        <a href="https://x.com/ivangomezz21" target="_blank" rel="noopener noreferrer" title="X" aria-label="X"><i class="fab fa-x-twitter" aria-hidden="true"></i></a>
       </div>
+
     </div>
   </header>
 
   <nav class="navbar">
-    <div class="navbar-links" id="navbar-links">
-      <a href="#profile">Profile</a>
-      <a href="#experience">Experience</a>
-      <a href="#education">Education</a>
-      <a href="#awards">Awards</a>
-      <a href="#publications">Publications</a>
-      <a href="#skills">Skills</a>
+    <div class="navbar-links">
+      <a href="#profile" data-en="Profile" data-es="Perfil">Profile</a>
+      <a href="#experience" data-en="Experience" data-es="Experiencia">Experience</a>
+      <a href="#education" data-en="Education" data-es="Formación">Education</a>
+      <a href="#news" data-en="News" data-es="Noticias">News</a>
+      <a href="#publications" data-en="Publications" data-es="Publicaciones">Publications</a>
+      <a href="#skills" data-en="Skills" data-es="Habilidades">Skills</a>
+      <a href="#details" data-en="Details" data-es="Información">Details</a>
+    </div>
+    <div class="lang-switcher" aria-label="Language selector">
+      <button type="button" class="lang-button is-active" data-lang-button="en">EN</button>
+      <button type="button" class="lang-button" data-lang-button="es">ES</button>
     </div>
   </nav>
 
-  <div id="profile" class="section">
-    <h2>Profile</h2>
-    <p style="text-align: justify;">
-      I'm Iván Gómez, a Data Scientist in industrial processes and a Ph.D. candidate in Data Science and Artificial
-      Intelligence at the University of Zaragoza. My background combines professional experience and academic training,
-      focusing on the application of artificial intelligence to develop innovative solutions and tackle technological
-      challenges.
-    </p>
-  </div>
+  <main>
+    <section id="profile" class="section">
+      <h2 data-en="Profile" data-es="Perfil">Profile</h2>
+      <div class="card">
+        <p data-en="Applied AI and machine learning professional with a background in Electronic and Automation Engineering and hands-on experience delivering AI systems in industrial environments. Currently leading a small team working across computer vision, LLM and RAG solutions, data platforms, and integration with PLC, SCADA and HMI systems." data-es="Profesional de IA aplicada y aprendizaje automático con formación en Ingeniería Electrónica y Automática y experiencia real desplegando sistemas de IA en entornos industriales. Actualmente lidero un pequeño equipo que trabaja en visión por computador, soluciones con LLM y RAG, plataformas de datos e integración con sistemas PLC, SCADA y HMI.">
+          Applied AI and machine learning professional with a background in Electronic and Automation Engineering and
+          hands-on experience delivering AI systems in industrial environments. Currently leading a small team working
+          across computer vision, LLM and RAG solutions, data platforms, and integration with PLC, SCADA and HMI systems.
+        </p>
+        <p data-en="Strong track record of turning ambiguous R&amp;D and operational needs into production-ready solutions by working across data, software, automation and plant stakeholders. PhD candidate in Data Science and Artificial Intelligence, with publications in predictive modeling and heterogeneous data integration." data-es="Experiencia sólida convirtiendo necesidades ambiguas de I+D y operación en soluciones listas para producción, trabajando entre datos, software, automatización y personal de planta. Doctorando en Ciencia de Datos e Inteligencia Artificial, con publicaciones en modelado predictivo e integración de datos heterogéneos.">
+          Strong track record of turning ambiguous R&amp;D and operational needs into production-ready solutions by working
+          across data, software, automation and plant stakeholders. PhD candidate in Data Science and Artificial
+          Intelligence, with publications in predictive modeling and heterogeneous data integration.
+        </p>
+      </div>
 
-
-  <div id="experience" class="section">
-    <h2>Work Experience</h2>
-    <div class="card">
-      <h3>Lead Data Scientist - Servaiter Team S.L. (Térvalis Business Group)</h3>
-      <p><strong>April 2025 - Present</strong></p>
-      <ul>
-        <li>Development of RAG-based manuals.</li>
-        <li>Integration of AI with PLC/SCADA/HMI systems for automation.</li>
-        <li>Computer vision solutions for quality control, counting, and traceability.</li>
-        <li>Management of servers and SQL/NoSQL infrastructure.</li>
-        <li>Design of ETL/ELT pipelines for data ingestion and processing.</li>
-        <li>Deployment of applications with Docker.</li>
-        <li>Development of BI dashboards.</li>
-      </ul>
-    </div>
-    <div class="card">
-      <h3>Data Scientist - Entrerríos Automatización S.A.</h3>
-      <p><strong>July 2022 - April 2025</strong></p>
-      <p>Development of data science systems, including pipelines and AI models integrated into industrial control
-        environments.</p>
-    </div>
-  </div>
-
-  <div id="education" class="section">
-    <h2>Education</h2>
-    <div class="card">
-      <h3>PhD in Data Science and Artificial Intelligence - University of Zaragoza</h3>
-      <p><strong>September 2024 - Present</strong></p>
-      <p>
-        PhD Project: In <a href="https://webdiis.unizar.es/~silarri/prot/TrafficDator/" target="_blank"
-          rel="noopener noreferrer">TrafficDator</a>, our goal is to develop Artificial Intelligence-based methodologies
-        for short- and long-term traffic prediction. To achieve this, we integrate a variety of data sources and apply
-        advanced Machine Learning and Deep Learning models, optimizing accuracy and efficiency in estimating traffic
-        flow.
-      </p>
-    </div>
-    <div class="card">
-      <h3>Master's in Visual Analytics and Big Data - International University of La Rioja (UNIR)</h3>
-      <p><strong>October 2022 - June 2024</strong></p>
-      <ul>
-        <li>University Specialist in Artificial Intelligence</li>
-        <li>University Specialist in Industry 4.0</li>
-      </ul>
-    </div>
-    <div class="card">
-      <h3>Bachelor's Degree in Electronic and Automation Engineering - Polytechnic University School of Teruel (UNIZAR)
-      </h3>
-      <p><strong>September 2018 - June 2022</strong></p>
-      <p>Erasmus: SAMK (Finland)</p>
-    </div>
-  </div>
-
-  <div id="awards" class="section">
-    <h2>Awards and Recognitions</h2>
-    <div class="card">
-      <ul>
-        <li>
-          <a href="https://www.diariodeteruel.es/teruel/la-escuela-politecnica-de-teruel-celebra-su-patron-con-la-vista-puesta-en-mantener-el-crecimiento"
-            target="_blank" rel="noopener noreferrer">
-            Best Academic Record in Electronic and Automation Engineering (2022)
-          </a>
-        </li>
-        <li>
-          <a href="https://www.instagram.com/p/Cty9gveMrOE/?img_index=1" target="_blank" rel="noopener noreferrer">
-            Best Bachelor's Thesis Award (COGITIAR)
-          </a> —
-          <a href="https://www.diariodeteruel.es/teruel/un-alumno-de-ingenieria-electronica-disena-un-nuevo-sistema-para-poder-estimar-el-riesgo-de-caidas-en-mayores"
-            target="_blank" rel="noopener noreferrer">
-            Fall Risk Estimation Using Accelerometers and Machine Learning Techniques
-          </a>
-        </li>
-      </ul>
-    </div>
-  </div>
-
-  <div id="publications" class="section">
-    <h2>Scientific Publications</h2>
-
-    <div class="card">
-      <p>
-        <strong>
-          <a href="https://ieeexplore.ieee.org/document/11269361" target="_blank" rel="noopener noreferrer">
-            Advanced Prediction of Traffic at Different Temporal Scales Using Heterogeneous Data Sources
-          </a>
-        </strong>
-      </p>
-      <p><em>IEEE Open Journal of Intelligent Transportation Systems &middot; Nov 27, 2025</em></p>
-    </div>
-
-    <div class="card">
-      <p>
-        <strong>
-          <a href="https://www.sciencedirect.com/science/article/pii/S2352340924008412?via%3Dihub" target="_blank"
-            rel="noopener noreferrer">
-            Enriched traffic datasets for the city of Madrid
-          </a>
-        </strong>
-      </p>
-      <p><em>Data in Brief &middot; Aug 31, 2024</em></p>
-    </div>
-
-    <div class="card">
-      <p>
-        <strong>
-          <a href="https://papiro.unizar.es/ojs/index.php/jji3a/article/view/10588" target="_blank"
-            rel="noopener noreferrer">
-            Innovaciones en la Gestión del Tráfico Urbano Utilizando Fuentes de Datos Heterogéneas e IA
-          </a>
-        </strong>
-      </p>
-      <p><em>Jornada de Jóvenes Investigadores del I3A &middot; 17 jul. 2024</em></p>
-    </div>
-    <div id="skills" class="section">
-      <h2>Skills</h2>
-      <div class="skills-grid">
-        <div class="card">
-          <h3><i class="fas fa-code"></i> Programming Languages</h3>
-          <p>Python, SQL</p>
+      <div class="highlights">
+        <div class="card small-card">
+          <h3 data-en="Focus Areas" data-es="Áreas de enfoque">Focus Areas</h3>
+          <p data-en="Industrial AI, Computer Vision, RAG / GenAI, Automation Integration, Technical Leadership" data-es="IA industrial, visión por computador, RAG / GenAI, integración con automatización, liderazgo técnico">Industrial AI, Computer Vision, RAG / GenAI, Automation Integration, Technical Leadership</p>
         </div>
-        <div class="card">
-          <h3><i class="fas fa-brain"></i> AI & ML Libraries</h3>
-          <p>PyTorch, TensorFlow, Scikit-learn, OpenCV, Pandas, NumPy</p>
+        <div class="card small-card">
+          <h3 data-en="Current Role" data-es="Rol actual">Current Role</h3>
+          <p data-en="Lead Data Scientist at Servaiter Team S.L. (Grupo Térvalis)" data-es="Lead Data Scientist en Servaiter Team S.L. (Grupo Térvalis)">Lead Data Scientist at Servaiter Team S.L. (Grupo Térvalis)</p>
         </div>
-        <div class="card">
-          <h3><i class="fas fa-language"></i> NLP</h3>
-          <p>LLM APIs, semantic embeddings, LangChain</p>
-        </div>
-        <div class="card">
-          <h3><i class="fas fa-database"></i> Databases</h3>
-          <p>SQL (MariaDB, SQL Server, MySQL), NoSQL (MongoDB)</p>
-        </div>
-        <div class="card">
-          <h3><i class="fas fa-chart-line"></i> BI & Cloud Tools</h3>
-          <p>Power BI, AWS (Quick Suite, RDS)</p>
-        </div>
-        <div class="card">
-          <h3><i class="fas fa-tools"></i> Development & Deployment</h3>
-          <p>Docker, GitHub, Visual Studio Code</p>
-        </div>
-        <div class="card">
-          <h3><i class="fas fa-industry"></i> Industrial Software</h3>
-          <p>Machine Expert, Control Expert, Video Designer, System Platform</p>
+        <div class="card small-card">
+          <h3 data-en="Research" data-es="Investigación">Research</h3>
+          <p data-en="PhD candidate focused on AI-based traffic prediction and heterogeneous data sources." data-es="Doctorando centrado en predicción de tráfico basada en IA y fuentes de datos heterogéneas.">PhD candidate focused on AI-based traffic prediction and heterogeneous data sources.</p>
         </div>
       </div>
-    </div>
-  </div>
+    </section>
 
+    <section id="experience" class="section">
+      <h2 data-en="Professional Experience" data-es="Experiencia profesional">Professional Experience</h2>
 
-  <div id="certifications" class="section">
-    <h2>Certifications and Courses</h2>
-    <div class="card">
-      <ul>
-        <li>Python Programming Course, UNIR, Spain; 2023</li>
-        <li>Microsoft Azure Fundamentals AZ-900, Microsoft; 2022</li>
-      </ul>
-    </div>
-  </div>
+      <div class="card">
+        <h3>Lead Data Scientist - Servaiter Team S.L. (Grupo Térvalis)</h3>
+        <p><strong>Apr 2025 - Present</strong></p>
+        <ul>
+          <li data-en="Continued in the same industrial AI team after its transition from Entrerríos Automatización to Servaiter Team (Grupo Térvalis), taking formal leadership of delivery across fertilizer, aggregates, and meat-processing environments." data-es="Continué en el mismo equipo de IA industrial tras su transición de Entrerríos Automatización a Servaiter Team (Grupo Térvalis), asumiendo formalmente el liderazgo de las entregas en entornos de fertilizantes, áridos y procesado cárnico.">Continued in the same industrial AI team after its transition from Entrerríos Automatización to Servaiter Team (Grupo Térvalis), taking formal leadership of delivery across fertilizer, aggregates, and meat-processing environments.</li>
+          <li data-en="Lead a small cross-functional team spanning data, software, and automation, owning solution design from problem framing to deployment in real operational settings." data-es="Lidero un pequeño equipo transversal de datos, software y automatización, responsabilizándome del diseño de soluciones desde la definición del problema hasta el despliegue en entornos operativos reales.">Lead a small cross-functional team spanning data, software, and automation, owning solution design from problem framing to deployment in real operational settings.</li>
+          <li data-en="Architect and deploy RAG assistants for technical manuals and operational knowledge, improving access to technical information for operations and maintenance teams." data-es="Arquitecto y despliego asistentes RAG para manuales técnicos y conocimiento operativo, mejorando el acceso a información técnica para equipos de operaciones y mantenimiento.">Architect and deploy RAG assistants for technical manuals and operational knowledge, improving access to technical information for operations and maintenance teams.</li>
+          <li data-en="Build computer vision systems for quality inspection, counting, traceability, and novel R&amp;D use cases." data-es="Desarrollo sistemas de visión por computador para inspección de calidad, conteo, trazabilidad y nuevos casos de uso de I+D.">Build computer vision systems for quality inspection, counting, traceability, and novel R&amp;D use cases.</li>
+          <li data-en="Integrate AI applications with PLC, SCADA, HMI, and industrial communication environments to embed ML capabilities into real operational workflows." data-es="Integro aplicaciones de IA con entornos PLC, SCADA, HMI y comunicaciones industriales para incorporar capacidades de ML en flujos operativos reales.">Integrate AI applications with PLC, SCADA, HMI, and industrial communication environments to embed ML capabilities into real operational workflows.</li>
+          <li data-en="Design data and ML infrastructure across SQL/NoSQL stores, ETL/ELT pipelines, containerized services, and dashboarding and reporting tools." data-es="Diseño infraestructuras de datos y ML sobre almacenes SQL/NoSQL, pipelines ETL/ELT, servicios contenedorizados y herramientas de cuadros de mando y reporting.">Design data and ML infrastructure across SQL/NoSQL stores, ETL/ELT pipelines, containerized services, and dashboarding and reporting tools.</li>
+        </ul>
+      </div>
 
+      <div class="card">
+        <h3>Data Scientist - Entrerríos Automatización S.A.</h3>
+        <p><strong>Jul 2022 - Apr 2025</strong></p>
+        <ul>
+          <li data-en="Contributed to the work that was later continued and expanded within Servaiter Team / Grupo Térvalis." data-es="Contribuí al trabajo que posteriormente fue continuado y ampliado dentro de Servaiter Team / Grupo Térvalis.">Contributed to the work that was later continued and expanded within Servaiter Team / Grupo Térvalis.</li>
+        </ul>
+      </div>
+    </section>
 
-  <div id="languages" class="section">
-    <h2>Languages</h2>
-    <div class="card">
-      <p><strong>Spanish:</strong> Native</p>
-      <p><strong>English:</strong> B2 (First Certificate - Cambridge)</p>
-    </div>
-  </div>
+    <section id="education" class="section">
+      <h2 data-en="Education" data-es="Formación">Education</h2>
+
+      <div class="card">
+        <h3 data-en="PhD in Data Science and Artificial Intelligence - UNIR" data-es="Doctorado en Ciencia de Datos e Inteligencia Artificial - UNIR">PhD in Data Science and Artificial Intelligence - UNIR</h3>
+        <p><strong>Sep 2024 - Present</strong></p>
+        <p data-en="Research topic: AI-based traffic prediction." data-es="Tema de investigación: predicción de tráfico basada en IA.">Research topic: AI-based traffic prediction.</p>
+      </div>
+
+      <div class="card">
+        <h3 data-en="Master's in Visual Analytics and Big Data - University of Zaragoza" data-es="Máster en Analítica Visual y Big Data - Universidad de Zaragoza">Master's in Visual Analytics and Big Data - University of Zaragoza</h3>
+        <p><strong>Oct 2022 - Jun 2024</strong></p>
+        <p data-en="Additional university specialization in Artificial Intelligence and Industry 4.0." data-es="Especialización universitaria adicional en Inteligencia Artificial e Industria 4.0.">Additional university specialization in Artificial Intelligence and Industry 4.0.</p>
+      </div>
+
+      <div class="card">
+        <h3 data-en="Bachelor's Degree in Electronic and Automation Engineering - University of Zaragoza" data-es="Grado en Ingeniería Electrónica y Automática - Universidad de Zaragoza">Bachelor's Degree in Electronic and Automation Engineering - University of Zaragoza</h3>
+        <p><strong>Sep 2018 - Jun 2022</strong></p>
+        <p data-en="Erasmus exchange at SAMK, Finland. Best academic record of the 2018-2022 class. Best Bachelor's Thesis." data-es="Intercambio Erasmus en SAMK, Finlandia. Mejor expediente de la promoción 2018-2022. Mejor Trabajo Fin de Grado.">Erasmus exchange at SAMK, Finland. Best academic record of the 2018-2022 class. Best Bachelor's Thesis.</p>
+      </div>
+    </section>
+
+    <section id="news" class="section">
+      <h2 data-en="News" data-es="Noticias">News</h2>
+
+      <div class="news-grid">
+        <a class="news-link-card" href="https://www.diariodeteruel.es/teruel/la-escuela-politecnica-de-teruel-celebra-su-patron-con-la-vista-puesta-en-mantener-el-crecimiento" target="_blank" rel="noopener noreferrer" aria-label="Open best academic record article">
+          <div class="news-card-media">
+            <img src="https://www.diariodeteruel.es/uploads/diariodeteruel/contenidos/56230_politecnica.webp" alt="Premios de la Escuela Politécnica de Teruel" loading="lazy" referrerpolicy="no-referrer" />
+          </div>
+          <div class="news-card-body">
+            <p class="news-card-source" data-en="Link" data-es="Enlace">Link</p>
+            <h3 data-en="Best academic record in Electronic and Automation Engineering" data-es="Mejor expediente de Ingeniería electrónica y automática">Best academic record in Electronic and Automation Engineering</h3>
+            <p class="news-card-meta" data-en="DIARIO DE TERUEL, the newspaper of the province" data-es="DIARIO DE TERUEL, el periódico de la provincia">DIARIO DE TERUEL, the newspaper of the province</p>
+            <p class="news-card-excerpt" data-en="Recognition linked to the best academic record at the Polytechnic School of Teruel." data-es="Reconocimiento vinculado al mejor expediente académico de la Escuela Politécnica de Teruel.">Recognition linked to the best academic record at the Polytechnic School of Teruel.</p>
+            <span class="news-card-cta" data-en="Read article" data-es="Leer artículo">Read article <i class="fas fa-arrow-up-right-from-square"></i></span>
+          </div>
+        </a>
+
+        <a class="news-link-card" href="https://ventacontenidos.diariodeteruel.es/EdicionDiariaPaginaPDF.aspx?Fec=16-06-2023&amp;Pag=9" target="_blank" rel="noopener noreferrer" aria-label="Open best final degree project award article">
+          <div class="news-card-media">
+            <img src="https://scontent-mad2-1.cdninstagram.com/v/t51.29350-15/355237597_622735486462808_8586209390837395524_n.heic?stp=dst-jpg_e35_tt6&_nc_cat=100&ig_cache_key=MzEzMDgzNTIxNTUyNTc2MDY5Ng%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6InhwaWRzLjE0NDB4MTQ0MC5zZHIuZGVmYXVsdF9pbWFnZS5DMyJ9&_nc_ohc=1XxFFxSlM44Q7kNvwH0MpfO&_nc_oc=Ado5Tmt3FExRHIE3v3t6TcApF3h0sn4V0PtTuOyOUaY6Gq2v4NeOQJAl9mB4VOzpLCI&_nc_ad=z-m&_nc_cid=3033&_nc_zt=23&_nc_ht=scontent-mad2-1.cdninstagram.com&_nc_gid=5KkMH0HYPy2ZCS0EaCwPQA&_nc_ss=7a32e&oh=00_Af3hP_P-FfBnN_SYdaUvsMtQLUbMafqX5dzzF7HEW1z1Jw&oe=69D4432B" alt="Premio COGITIAR" loading="lazy" referrerpolicy="no-referrer" />
+          </div>
+          <div class="news-card-body">
+            <p class="news-card-source" data-en="Link" data-es="Enlace">Link</p>
+            <h3 data-en="Best Bachelor's Thesis award granted by the College of Industrial Engineers of Aragón (COGITIAR)" data-es="Premio al mejor Trabajo Fin de Grado otorgado por Colegio de Ingenieros Industriales de Aragón (COGITIAR)">Best Bachelor's Thesis award granted by the College of Industrial Engineers of Aragón (COGITIAR)</h3>
+            <p class="news-card-meta">Diario de Teruel / COGITIAR</p>
+            <p class="news-card-excerpt" data-en="Recognition for the Bachelor's Thesis project on AI-based fall-risk estimation for older adults." data-es="Reconocimiento al proyecto de Trabajo Fin de Grado sobre estimación del riesgo de caídas en personas mayores mediante IA.">Recognition for the Bachelor's Thesis project on AI-based fall-risk estimation for older adults.</p>
+            <span class="news-card-cta" data-en="Open source" data-es="Abrir fuente">Open source <i class="fas fa-arrow-up-right-from-square"></i></span>
+          </div>
+        </a>
+
+        <a class="news-link-card" href="https://www.diariodeteruel.es/teruel/un-alumno-de-ingenieria-electronica-disena-un-nuevo-sistema-para-poder-estimar-el-riesgo-de-caidas-en-mayores" target="_blank" rel="noopener noreferrer" aria-label="Open fall-risk estimation article">
+          <div class="news-card-media">
+            <img src="https://www.diariodeteruel.es/uploads/diariodeteruel/contenidos/53398_nuevo-sistema-para.webp" alt="Iván Gómez en Diario de Teruel" loading="lazy" referrerpolicy="no-referrer" />
+          </div>
+          <div class="news-card-body">
+            <p class="news-card-source" data-en="Link" data-es="Enlace">Link</p>
+            <h3 data-en="Engineering student designs a new system to estimate fall risk in older adults" data-es="Un alumno de Ingeniería electrónica diseña un nuevo sistema para poder estimar el riesgo de caídas en mayores">Engineering student designs a new system to estimate fall risk in older adults</h3>
+            <p class="news-card-meta" data-en="DIARIO DE TERUEL, the newspaper of the province" data-es="DIARIO DE TERUEL, el periódico de la provincia">DIARIO DE TERUEL, the newspaper of the province</p>
+            <p class="news-card-excerpt" data-en="Coverage of the final degree project focused on fall-risk estimation through sensors and machine learning." data-es="Cobertura del Trabajo Fin de Grado centrado en la estimación del riesgo de caídas mediante sensores y aprendizaje automático.">Coverage of the final degree project focused on fall-risk estimation through sensors and machine learning.</p>
+            <span class="news-card-cta" data-en="Read article" data-es="Leer artículo">Read article <i class="fas fa-arrow-up-right-from-square"></i></span>
+          </div>
+        </a>
+
+        <a class="news-link-card" href="https://www.europapress.es/aragon/noticia-autores-cartel-vaquilla-reciben-ayuntamiento-teruel-1000-euros-primer-premio-20130530183538.html" target="_blank" rel="noopener noreferrer" aria-label="Open Vaquilla award article">
+          <div class="news-card-media">
+            <img src="https://imagenes.20minutos.es/files/image_1920_1080/uploads/imagenes/2013/05/30/1691060a.jpg" alt="Entrega del premio del cartel de la Vaquilla" loading="lazy" referrerpolicy="no-referrer" />
+          </div>
+          <div class="news-card-body">
+            <p class="news-card-source" data-en="Link" data-es="Enlace">Link</p>
+            <h3 data-en="The author of the Vaquilla poster signs the work and receives the 1,000-euro prize" data-es="El autor del cartel de la Vaquilla firma su obra y recibe los 1.000 euros del premio">The author of the Vaquilla poster signs the work and receives the 1,000-euro prize</h3>
+            <p class="news-card-meta">Europa Press</p>
+            <p class="news-card-excerpt" data-en="Coverage of the award and public signing connected to the winning Vaquilla poster." data-es="Cobertura de la entrega del premio y de la firma pública vinculadas al cartel ganador de la Vaquilla.">Coverage of the award and public signing connected to the winning Vaquilla poster.</p>
+            <span class="news-card-cta" data-en="Read article" data-es="Leer artículo">Read article <i class="fas fa-arrow-up-right-from-square"></i></span>
+          </div>
+        </a>
+
+        <a class="news-link-card" href="https://www.lavanguardia.com/local/aragon/20190424/461844785051/el-cartel-el-latido-de-teruel-anunciara-las-fiestas-de-la-vaquilla-2019.html" target="_blank" rel="noopener noreferrer" aria-label="Open El latido de Teruel article">
+          <div class="news-card-media">
+            <img src="https://imagenes.heraldo.es/files/og_thumbnail/uploads/imagenes/2019/04/24/imagen-presentacion-del-cart-31581847.jpeg" alt="Cartel El latido de Teruel" loading="lazy" referrerpolicy="no-referrer" />
+          </div>
+          <div class="news-card-body">
+            <p class="news-card-source" data-en="Link" data-es="Enlace">Link</p>
+            <h3 data-en="The poster 'The heartbeat of Teruel' announced the 2019 Vaquilla festivities" data-es="El cartel 'El latido de Teruel' anunciará las fiestas de la Vaquilla 2019">The poster 'The heartbeat of Teruel' announced the 2019 Vaquilla festivities</h3>
+            <p class="news-card-meta">La Vanguardia / Europa Press</p>
+            <p class="news-card-excerpt" data-en="Article about the winning poster that announced the 2019 Vaquilla festivities in Teruel." data-es="Artículo sobre el cartel ganador que anunció las fiestas de la Vaquilla 2019 en Teruel.">Article about the winning poster that announced the 2019 Vaquilla festivities in Teruel.</p>
+            <span class="news-card-cta" data-en="Read article" data-es="Leer artículo">Read article <i class="fas fa-arrow-up-right-from-square"></i></span>
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <section id="publications" class="section">
+      <h2 data-en="Publications" data-es="Publicaciones">Publications</h2>
+
+      <div class="card">
+        <h3>
+          <a href="https://ieeexplore.ieee.org/document/11269361" target="_blank" rel="noopener noreferrer">
+            Advanced prediction of traffic at different temporal scales using heterogeneous data sources
+          </a>
+        </h3>
+        <p><em>IEEE Open Journal of Intelligent Transportation Systems · 2025</em></p>
+      </div>
+
+      <div class="card">
+        <h3>
+          <a href="https://www.sciencedirect.com/science/article/pii/S2352340924008412?via%3Dihub" target="_blank" rel="noopener noreferrer">
+            Enriched traffic datasets for the city of Madrid: integrating traffic sensors, road infrastructure, calendar data, and weather data
+          </a>
+        </h3>
+        <p><em>Data in Brief · 2024</em></p>
+      </div>
+    </section>
+
+    <section id="skills" class="section">
+      <h2 data-en="Technical Skills" data-es="Habilidades técnicas">Technical Skills</h2>
+      <div class="skills-grid">
+        <div class="card">
+          <h3><i class="fas fa-brain"></i> <span data-en="Machine Learning &amp; AI" data-es="Aprendizaje automático e IA">Machine Learning &amp; AI</span></h3>
+          <p>PyTorch, TensorFlow, Scikit-learn, OpenCV, LLM APIs, semantic embeddings, LangChain, RAG systems</p>
+        </div>
+        <div class="card">
+          <h3><i class="fas fa-database"></i> <span data-en="Data Engineering &amp; Analytics" data-es="Ingeniería de datos y analítica">Data Engineering &amp; Analytics</span></h3>
+          <p>Pandas, NumPy, ETL/ELT pipelines, dashboarding and reporting, HTML-based visualizations</p>
+        </div>
+        <div class="card">
+          <h3><i class="fas fa-cloud"></i> <span data-en="Cloud &amp; Infrastructure" data-es="Cloud e infraestructura">Cloud &amp; Infrastructure</span></h3>
+          <p>AWS (RDS, QuickSight), Docker, Linux, Hyper-V, Azure fundamentals</p>
+        </div>
+        <div class="card">
+          <h3><i class="fas fa-server"></i> <span data-en="Databases" data-es="Bases de datos">Databases</span></h3>
+          <p>MariaDB, SQL Server, MySQL, MongoDB</p>
+        </div>
+        <div class="card">
+          <h3><i class="fas fa-industry"></i> <span data-en="Industrial Systems" data-es="Sistemas industriales">Industrial Systems</span></h3>
+          <p>PLC/SCADA/HMI integration, Machine Expert, Control Expert, Vijeo Designer, System Platform</p>
+        </div>
+        <div class="card">
+          <h3><i class="fas fa-laptop-code"></i> <span data-en="Development Tools" data-es="Herramientas de desarrollo">Development Tools</span></h3>
+          <p>Git, GitHub, Visual Studio Code, GitHub Copilot, Codex</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="details" class="section">
+      <h2 data-en="Additional Information" data-es="Información adicional">Additional Information</h2>
+      <div class="card">
+        <p><strong><span data-en="Languages:" data-es="Idiomas:">Languages:</span></strong> <span data-en="Spanish (Native), English (B2 - Cambridge First Certificate)" data-es="Español (nativo), inglés (B2 - Cambridge First Certificate)">Spanish (Native), English (B2 - Cambridge First Certificate)</span></p>
+        <p><strong><span data-en="Certifications:" data-es="Certificaciones:">Certifications:</span></strong> <span data-en="Python Programming Course, UNIR (2023) | Microsoft Azure Fundamentals AZ-900 (2022)" data-es="Curso de Programación en Python, UNIR (2023) | Microsoft Azure Fundamentals AZ-900 (2022)">Python Programming Course, UNIR (2023) | Microsoft Azure Fundamentals AZ-900 (2022)</span></p>
+      </div>
+    </section>
+  </main>
 
   <footer>
-    &copy; 2025 Iván Gómez Pascual · Developing with 💡 and lots of coffee ☕
+    &copy; 2026 Iván Gómez Pascual
   </footer>
 
+  <script>
+    (function () {
+      const buttons = Array.from(document.querySelectorAll('[data-lang-button]'));
+      const translatable = Array.from(document.querySelectorAll('[data-en][data-es]'));
+
+      function setLanguage(lang) {
+        document.documentElement.lang = lang;
+        translatable.forEach((element) => {
+          const value = element.dataset[lang];
+          if (!value) {
+            return;
+          }
+          element.innerHTML = value;
+        });
+
+        buttons.forEach((button) => {
+          button.classList.toggle('is-active', button.dataset.langButton === lang);
+        });
+
+        try {
+          localStorage.setItem('site-language', lang);
+        } catch (error) {
+        }
+      }
+
+      buttons.forEach((button) => {
+        button.addEventListener('click', function () {
+          setLanguage(button.dataset.langButton);
+        });
+      });
+
+      let initialLang = 'en';
+      try {
+        initialLang = localStorage.getItem('site-language') || 'en';
+      } catch (error) {
+      }
+
+      if (initialLang !== 'en' && initialLang !== 'es') {
+        initialLang = 'en';
+      }
+
+      setLanguage(initialLang);
+    }());
+  </script>
 </body>
 
 </html>
-
-<style>
-  header .overlay {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 0.2rem;
-    /* controla lo pegado que va logo/iconos */
-  }
-
-  .profile-logo {
-    width: clamp(320px, 85vw, 460px);
-    max-width: 90vw;
-    margin-bottom: 0;
-  }
-
-  @media (max-width: 768px) {
-    header {
-      padding: 1.25rem 1rem;
-      /* antes 2.5rem */
-      min-height: auto;
-    }
-
-    .profile-logo {
-      width: 380px;
-      max-width: 90vw;
-      margin-bottom: 0;
-      /* antes 0.6rem */
-    }
-
-    .contact-icons {
-      margin-top: 0;
-      /* antes 0.6rem */
-    }
-  }
-
-  .contact-icons a {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    width: 40px;
-    height: 40px;
-    margin: 0 0.5rem;
-    color: #fff;
-    transition: color 0.3s;
-  }
-
-  .contact-icons a:hover {
-    color: #f0db4f;
-  }
-</style>
