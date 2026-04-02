@@ -1,23 +1,24 @@
 # Personal Website
 
-Personal website and portfolio of Iván Gómez Pascual.
+Static personal website of Iván Gómez Pascual.
 
 ## Overview
 
-This repository contains a simple static website built with HTML and CSS.
-It includes professional experience, education, publications, technical skills, contact details, and featured external links.
+This repository contains a lightweight portfolio website built with plain HTML and CSS.
+It includes profile information, professional experience, education, publications, technical skills, and linked news items.
 
-## Files
+## Project Structure
 
-- `index.html`: main page structure and content
-- `style.css`: visual styles and responsive layout
-- `LOGOS/`: logo assets used by the website
-- `FONDO.png` and `FOTO_PERSONAL.png`: image assets
+- `index.html`: page content and language-switching script
+- `style.css`: layout, responsive styles, and visual design
+- `LOGOS/`: favicon and logo assets
+- `FONDO.png`: background image used in the header
+- `CNAME`: custom domain configuration for deployment
 
 ## Local Preview
 
-Open `index.html` in your browser to preview the website locally.
+Open `index.html` in any browser to preview the website locally.
 
 ## Deployment
 
-This site is prepared to be published as a static personal website.
+The project is ready to be published as a static site, including GitHub Pages.
