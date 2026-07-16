@@ -11,8 +11,7 @@ It includes profile information, professional experience, education, publication
 
 - `index.html`: page content and language-switching script
 - `style.css`: layout, responsive styles, and visual design
-- `LOGOS/`: favicon and logo assets
-- `FONDO.png`: background image used in the header
+- `images/`: favicon, logo and header background assets
 - `CNAME`: custom domain configuration for deployment
 
 ## Local Preview
