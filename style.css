@@ -831,3 +831,21 @@ button:focus-visible {
     grid-template-columns: 1fr;
   }
 }
+
+/* Intro: the CV summary as the presentation. */
+.intro h2.intro-kicker {
+  margin: 0;
+  font-size: 0.8rem;
+  line-height: 1.4;
+  letter-spacing: 0.1em;
+  font-weight: 700;
+  color: #8fc0ff;
+}
+
+.intro-summary {
+  margin-top: 0.8rem;
+  max-width: 720px;
+  font-size: 1.12rem;
+  line-height: 1.7;
+  color: #e3ecf8;
+}
