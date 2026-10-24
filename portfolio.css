@@ -41,7 +41,7 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--accent);outline-off
 .org{grid-column:2;color:var(--accent);font-size:14px;line-height:1.7}.entry ul{grid-column:2;list-style:none;margin-top:10px;max-width:790px}
 .entry li{padding-left:20px;position:relative;font-size:16px;line-height:1.85;color:var(--muted)}.entry li+li{margin-top:8px}.entry li::before{content:'';position:absolute;left:0;top:13px;width:5px;height:5px;border:1px solid #6b8e77}
 .entry+.entry{border-top:1px solid var(--line);padding-top:34px}
-.cards{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px}
+.cards{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px}
 .card{min-width:0;padding:28px 26px;border:1px solid var(--line);border-radius:4px;background:#fbfcfa}
 .card-icon{width:40px;height:40px;display:grid;place-items:center;font-size:21px;color:var(--accent);margin-bottom:24px}
 .card[data-tone='violet'] .card-icon{color:var(--blue)}.card[data-tone='amber'] .card-icon{color:#ad6249}
@@ -75,7 +75,7 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--accent);outline-off
   .menu a{padding:14px 0 16px;min-height:48px;font-size:12px}.menu a::after{bottom:8px}
   .sidebar{min-height:min(624px,calc(100svh - 220px))}.sidebar-inner{padding:52px 24px 58px}.sidebar h1{font-size:56px;max-width:670px;margin-top:18px}.sidebar-bg{object-position:60% center;opacity:.14}.role-sub{font-size:18px}
   .content{padding:0 24px}.content>section{scroll-margin-top:142px}.intro,.block{padding:56px 0}.intro-inner{grid-template-columns:minmax(0,1fr);gap:26px}.intro-summary{max-width:760px}.block>h2{margin-bottom:30px}
-  .cards{grid-template-columns:repeat(2,minmax(0,1fr))}.cards .card:last-child{grid-column:1/-1}.skill-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:28px}
+  .cards{grid-template-columns:repeat(2,minmax(0,1fr))}.skill-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:28px}
   .news-grid{grid-template-columns:minmax(0,1fr);gap:28px}.news{display:grid;grid-template-columns:230px minmax(0,1fr);column-gap:24px;padding-bottom:24px;align-items:center}.news-body{padding-top:0}
 }
 @media(max-width:540px){
