@@ -8,7 +8,7 @@
     name="description"
     content="Iván Gómez Pascual, AI Engineer. Leads AI and software at Grupo Térvalis and is a part-time PhD candidate in Data Science and AI at the University of Zaragoza."
   />
-  <meta name="theme-color" content="#0b1f3a" />
+  <meta name="theme-color" content="#f6f8f6" />
   <meta property="og:title" content="Iván Gómez Pascual | AI Engineer" />
   <meta property="og:description" content="ML, GenAI and computer vision in production. PhD candidate in Data Science and AI." />
   <meta property="og:type" content="website" />
@@ -19,9 +19,9 @@
   <link rel="icon" type="image/png" href="images/logo_square_white.png" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="portfolio.css?v=20261024-preview" />
   <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -41,11 +41,28 @@
 </head>
 
 <body>
+  <header class="topbar">
+    <div class="topbar-inner">
+      <img class="avatar" src="images/logo_square_360.webp" alt="" width="112" height="112" />
+      <nav class="menu" aria-label="Sections">
+        <a href="#about" data-en="About" data-es="Sobre mí">About</a>
+        <a href="#experience" data-en="Experience" data-es="Experiencia">Experience</a>
+        <a href="#projects" data-en="Projects" data-es="Proyectos">Projects</a>
+        <a href="#education" data-en="Education" data-es="Formación">Education</a>
+        <a href="#publications" data-en="Publications" data-es="Publicaciones">Publications</a>
+        <a href="#press" data-en="Press" data-es="Prensa">Press</a>
+      </nav>
+      <div class="lang-switcher" role="group" aria-label="Language">
+        <button type="button" class="lang-button is-active" data-lang-button="en" aria-pressed="true">EN</button>
+        <button type="button" class="lang-button" data-lang-button="es" aria-pressed="false">ES</button>
+      </div>
+    </div>
+    <div class="reading-progress" aria-hidden="true"></div>
+  </header>
   <div class="layout">
-    <aside class="sidebar">
+    <header class="sidebar">
       <img src="images/fondo.webp" alt="" class="sidebar-bg" />
       <div class="sidebar-inner">
-        <img class="avatar" src="images/logo_square_360.webp" alt="" width="112" height="112" />
         <h1>Iván Gómez Pascual</h1>
         <p class="role">AI Engineer</p>
         <p class="role-sub" data-en="ML · GenAI · Computer vision" data-es="ML · IA generativa · Visión artificial">ML · GenAI · Computer vision</p>
@@ -56,41 +73,11 @@
           <a class="contact-button" href="mailto:ivangp21@gmail.com"><i class="fas fa-envelope" aria-hidden="true"></i> Email</a>
         </div>
 
-        <nav class="menu" aria-label="Sections">
-          <a href="#about" data-en="About" data-es="Sobre mí">About</a>
-          <a href="#experience" data-en="Experience" data-es="Experiencia">Experience</a>
-          <a href="#projects" data-en="Projects" data-es="Proyectos">Projects</a>
-          <a href="#education" data-en="Education" data-es="Formación">Education</a>
-          <a href="#publications" data-en="Publications" data-es="Publicaciones">Publications</a>
-          <a href="#press" data-en="Press" data-es="Prensa">Press</a>
-        </nav>
-
-        <div class="skills">
-          <h2 data-en="Skills" data-es="Habilidades">Skills</h2>
-          <p class="skill-group" data-en="AI &amp; ML" data-es="IA y ML">AI &amp; ML</p>
-          <p class="chips"><span>Python</span><span>PyTorch</span><span>scikit-learn</span><span>TensorFlow</span><span>OpenCV</span><span>YOLO</span></p>
-          <p class="skill-group" data-en="GenAI" data-es="IA generativa">GenAI</p>
-          <p class="chips"><span>LLM APIs</span><span>RAG</span><span>Weaviate</span><span>LangChain</span><span data-en="Speech-to-text" data-es="Voz a texto">Speech-to-text</span></p>
-          <p class="skill-group" data-en="Engineering" data-es="Ingeniería">Engineering</p>
-          <p class="chips"><span>FastAPI</span><span>SQL</span><span>Docker</span><span>Linux</span><span>Git</span></p>
-          <p class="skill-group" data-en="Industrial" data-es="Industrial">Industrial</p>
-          <p class="chips"><span>PLC / SCADA</span><span>OPC UA</span><span>Modbus</span><span>MQTT</span></p>
-          <p class="skill-group" data-en="Coding with AI" data-es="Programar con IA">Coding with AI</p>
-          <p class="chips"><span>Codex</span><span>Claude Code</span><span>Cursor</span></p>
-          <p class="skill-group" data-en="Languages" data-es="Idiomas">Languages</p>
-          <p class="chips"><span data-en="Spanish · native" data-es="Español · nativo">Spanish · native</span><span data-en="English · B2" data-es="Inglés · B2">English · B2</span></p>
-        </div>
-
-        <div class="lang-switcher" role="group" aria-label="Language">
-          <button type="button" class="lang-button is-active" data-lang-button="en" aria-pressed="true">EN</button>
-          <button type="button" class="lang-button" data-lang-button="es" aria-pressed="false">ES</button>
-        </div>
       </div>
-    </aside>
+    </header>
 
     <main class="content">
       <section id="about" class="intro">
-        <img src="images/fondo.webp" alt="" class="intro-bg" />
         <div class="intro-inner">
           <h2 class="intro-kicker" data-en="About" data-es="Sobre mí">About</h2>
           <p class="intro-summary" data-en="AI engineer leading AI and software for an international industrial group, and part-time PhD candidate in Data Science and AI at the University of Zaragoza. Four years taking ML, GenAI and data systems from the first conversation with plant directors to daily use by operators, managers and sales teams. Focus on reliability: evaluation against baselines, data-quality gates, tests, audit trails and versioned rollouts." data-es="Ingeniero de IA. Dirijo la IA y el software de un grupo industrial internacional y hago el doctorado a tiempo parcial en Ciencia de Datos e IA en la Universidad de Zaragoza. Cuatro años llevando sistemas de ML, IA generativa y datos desde la primera conversación con los directores de planta hasta su uso diario por operarios, responsables y equipos comerciales. Me centro en la fiabilidad: evaluación frente a referencias, controles de calidad de datos, pruebas, trazabilidad y despliegues por versiones.">AI engineer leading AI and software for an international industrial group, and part-time PhD candidate in Data Science and AI at the University of Zaragoza. Four years taking ML, GenAI and data systems from the first conversation with plant directors to daily use by operators, managers and sales teams. Focus on reliability: evaluation against baselines, data-quality gates, tests, audit trails and versioned rollouts.</p>
@@ -153,6 +140,24 @@
             <p data-en="A particle size and colour measuring machine built from scratch, thermal monitoring with OCR, and people and vehicle detection." data-es="Una máquina de medida de tamaño y color de partícula hecha desde cero, monitorización térmica con OCR y detección de personas y vehículos.">A particle size and colour measuring machine built from scratch, thermal monitoring with OCR, and people and vehicle detection.</p>
             <p class="chips"><span>OpenCV</span><span>YOLO</span><span>PyTorch</span></p>
           </article>
+        </div>
+      </section>
+
+      <section id="skills" class="block skills">
+        <h2 data-en="Skills" data-es="Habilidades">Skills</h2>
+        <div class="skill-grid">
+          <div><p class="skill-group" data-en="AI &amp; ML" data-es="IA y ML">AI &amp; ML</p>
+          <p class="chips"><span>Python</span><span>PyTorch</span><span>scikit-learn</span><span>TensorFlow</span><span>OpenCV</span><span>YOLO</span></p></div>
+          <div><p class="skill-group" data-en="GenAI" data-es="IA generativa">GenAI</p>
+          <p class="chips"><span>LLM APIs</span><span>RAG</span><span>Weaviate</span><span>LangChain</span><span data-en="Speech-to-text" data-es="Voz a texto">Speech-to-text</span></p></div>
+          <div><p class="skill-group" data-en="Engineering" data-es="Ingeniería">Engineering</p>
+          <p class="chips"><span>FastAPI</span><span>SQL</span><span>Docker</span><span>Linux</span><span>Git</span></p></div>
+          <div><p class="skill-group" data-en="Industrial" data-es="Industrial">Industrial</p>
+          <p class="chips"><span>PLC / SCADA</span><span>OPC UA</span><span>Modbus</span><span>MQTT</span></p></div>
+          <div><p class="skill-group" data-en="Coding with AI" data-es="Programar con IA">Coding with AI</p>
+          <p class="chips"><span>Codex</span><span>Claude Code</span><span>Cursor</span></p></div>
+          <div><p class="skill-group" data-en="Languages" data-es="Idiomas">Languages</p>
+          <p class="chips"><span data-en="Spanish · native" data-es="Español · nativo">Spanish · native</span><span data-en="English · B2" data-es="Inglés · B2">English · B2</span></p></div>
         </div>
       </section>
 
@@ -261,7 +266,7 @@
 
       let initialLang = 'en';
       try {
-        initialLang = localStorage.getItem('site-language') || ((navigator.language || '').toLowerCase().startsWith('es') ? 'es' : 'en');
+        initialLang = localStorage.getItem('site-language') || 'en';
       } catch (error) {
       }
       setLanguage(initialLang === 'es' ? 'es' : 'en');
@@ -273,12 +278,28 @@
         const observer = new IntersectionObserver((entries) => {
           entries.forEach((entry) => {
             if (entry.isIntersecting) {
-              links.forEach((link) => link.classList.toggle('is-current', link.getAttribute('href') === '#' + entry.target.id));
+              links.forEach((link) => {
+                const current = link.getAttribute('href') === '#' + entry.target.id;
+                link.classList.toggle('is-current', current);
+                if (current) link.setAttribute('aria-current', 'location');
+                else link.removeAttribute('aria-current');
+              });
             }
           });
         }, { rootMargin: '-35% 0px -60% 0px' });
         sections.forEach((section) => observer.observe(section));
       }
+      let progressFrame = 0;
+      function updateProgress() {
+        progressFrame = 0;
+        const height = document.documentElement.scrollHeight - innerHeight;
+        document.documentElement.style.setProperty('--reading-progress', height > 0 ? Math.min(1, Math.max(0, scrollY / height)) : 0);
+      }
+      addEventListener('scroll', () => {
+        if (!progressFrame) progressFrame = requestAnimationFrame(updateProgress);
+      }, { passive: true });
+      addEventListener('resize', updateProgress);
+      updateProgress();
     }());
   </script>
 </body>
