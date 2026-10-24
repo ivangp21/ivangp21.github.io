@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="500" viewBox="0 0 800 500" role="img" aria-labelledby="title desc">
+  <title id="title">Conexión Aragón</title>
+  <desc id="desc">Aragón TV. 9 de enero de 2023. Tarjeta de la aparición en televisión.</desc>
+  <rect width="800" height="500" fill="#f2f1ed"/>
+  <rect x="56" y="56" width="8" height="388" fill="#d51c32"/>
+  <text x="100" y="126" fill="#d51c32" font-family="Arial, sans-serif" font-size="27" font-weight="700" letter-spacing="4">ARAGÓN TV</text>
+  <text x="96" y="248" fill="#203d52" font-family="Arial, sans-serif" font-size="69" font-weight="700">CONEXIÓN</text>
+  <text x="96" y="328" fill="#203d52" font-family="Arial, sans-serif" font-size="69" font-weight="700">ARAGÓN</text>
+  <text x="100" y="406" fill="#657075" font-family="Arial, sans-serif" font-size="25" letter-spacing="3">09.01.2023</text>
+</svg>
